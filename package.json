@@ -1,12 +1,23 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "Backend for Campeontao Ecuatoriano web app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {}
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Backend for Campeontao Ecuatoriano web app",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.5.0"
+    }
 }
