@@ -4,26 +4,26 @@ const db = require("../models");
 const User = db.users;
 const Op = db.Sequelize.Op;
 
-// Create and Save a new Tutorial
+// Create and Save a new Usuario
 exports.create = (req, res) => {
     // Validate request
-    if (!req.body.name || !req.body.lastname || !req.body.nickname || !req.body.email || !req.body.password) {
+    if (!req.body.nombre || !req.body.apellido || !req.body.nickname || !req.body.email || !req.body.password) {
         res.status(400).send({
             message: "Content can not be empty!"
         });
         return;
     }
 
-    // Create a Tutorial
+    // Create a Usuario
     const user = {
-        name: req.body.name,
-        lastname: req.body.lastname,
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
         nickname: req.body.nickname,
         email: req.body.email,
         password: req.body.password
     };
 
-    // Save Tutorial in the database
+    // Save Usuario in the database
     User.create(user)
         .then(data => {
             res.send(data);

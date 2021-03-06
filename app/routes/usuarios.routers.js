@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-const users = require("../controllers/user.controller");
+const users = require("../controllers/usuario.controller");
 
 var router = require("express").Router();
 

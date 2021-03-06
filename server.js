@@ -32,9 +32,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(morgan('dev'));
 
-const user_routers = require("./app/routes/users.routers");
+const user_routers = require("./app/routes/usuarios.routers");
 
-app.use("/user", user_routers);
+app.use("/usuario", user_routers);
 
 
 
